@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-color: #232323;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 100px;
+}
+
+header .accordion {
+    width: 500px;
+    height: max-content;
+    background: #fff;
+}
+
+header .accordion .acc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom: 2px solid #eee;
+}
+
+header .accordion .acc-header #show {
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+header .accordion .acc-body {
+    padding: 10px;
+    transition: all ease .3s;
+    display: none;
+}
+
+header .accordion .acc-body.active {
+    display: block;
+    transition: all ease .3s;
+}
